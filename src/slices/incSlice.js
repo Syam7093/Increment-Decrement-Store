@@ -19,7 +19,19 @@ export const incSlice = createSlice({
           some=state.value +1
         }
         else{
-          some=state.value -1
+          if(state.value>0)
+          {
+            some=state.value -1
+          }
+          else{
+            some=state.value 
+          }
+          
+            
+            
+           
+          
+          
         }
         state.value=some
 
